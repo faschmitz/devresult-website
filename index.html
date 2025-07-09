@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevResult IT Solutions - Big Data e Inteligência Artificial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+        <p class="loading-text">Inicializando Sistema...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="logo/logo.jpg" alt="DevResult IT Solutions" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#clients" class="nav-link">Clientes</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <div class="logo-hologram">
+                    <img src="logo/logo.jpg" alt="DevResult IT Solutions" class="hero-logo">
+                    <div class="hologram-effect"></div>
+                    <div class="hologram-lines"></div>
+                    <div class="hologram-grid"></div>
+                    <div class="logo-glow-bg"></div>
+                </div>
+            </div>
+            <h1 class="hero-title glitch" data-text="DevResult IT Solutions">
+                DevResult IT Solutions
+            </h1>
+            <p class="hero-subtitle">
+                Transformando dados em <span class="highlight">resultados</span>
+            </p>
+            <div class="hero-description">
+                <p>Especialistas em Big Data, Engenharia e Inteligência Artificial</p>
+                <p>Soluções inovadoras para impulsionar seu negócio</p>
+            </div>
+            <div class="cta-buttons">
+                <button class="cta-button primary" onclick="scrollToSection('services')">
+                    Nossos Serviços
+                </button>
+                <button class="cta-button secondary" onclick="scrollToSection('contact')">
+                    Fale Conosco
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="ai-visualization">
+                <div class="neural-network">
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-connection"></div>
+                    <div class="neural-connection"></div>
+                    <div class="neural-connection"></div>
+                    <div class="neural-connection"></div>
+                </div>
+                <div class="ai-brain">
+                    <div class="brain-waves"></div>
+                    <div class="brain-waves"></div>
+                    <div class="brain-waves"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <div class="icon-big-data"></div>
+                    </div>
+                    <h3>Big Data</h3>
+                    <p>Processamento e análise de grandes volumes de dados para insights valiosos</p>
+                    <ul>
+                        <li>Arquitetura de dados distribuídos</li>
+                        <li>Processamento em tempo real</li>
+                        <li>Data Lakes e Data Warehouses</li>
+                        <li>ETL/ELT pipelines</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <div class="icon-data-engineering"></div>
+                    </div>
+                    <h3>Engenharia de Dados</h3>
+                    <p>Infraestrutura robusta para coleta, processamento e armazenamento de dados</p>
+                    <ul>
+                        <li>Pipeline de dados automatizados</li>
+                        <li>Integração de fontes diversas</li>
+                        <li>Monitoramento e qualidade</li>
+                        <li>Arquitetura cloud-native</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <div class="icon-artificial-intelligence"></div>
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>Modelos preditivos e IA avançada para tomada de decisão inteligente</p>
+                    <ul>
+                        <li>Machine Learning e AI</li>
+                        <li>Análise preditiva</li>
+                        <li>Visualização de dados</li>
+                        <li>Business Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title">Sobre a DevResult</h2>
+                    <p>
+                        A DevResult IT Solutions é uma empresa especializada em transformar dados em resultados concretos para o seu negócio. 
+                        Com expertise em Big Data, Engenharia e Inteligência Artificial, oferecemos soluções inovadoras e personalizadas.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>
+                            <span class="stat-label">Projetos Concluídos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="99">0</span>
+                            <span class="stat-label">% Satisfação</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="24">0</span>
+                            <span class="stat-label">Suporte 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="tech-stack">
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">Spark</div>
+                        <div class="tech-item">Hadoop</div>
+                        <div class="tech-item">AWS</div>
+                        <div class="tech-item">Azure</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">Kubernetes</div>
+                        <div class="tech-item">TensorFlow</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">Nossos Clientes</h2>
+            <div class="clients-grid" data-aos="fade-up">
+                <div class="client-logo">
+                    <img src="clientes/0.avif" alt="Cliente 1">
+                </div>
+                <div class="client-logo">
+                    <img src="clientes/Firstlog.avif" alt="Firstlog">
+                </div>
+                <div class="client-logo">
+                    <img src="clientes/logo apae.avif" alt="APAE">
+                </div>
+                <div class="client-logo">
+                    <img src="clientes/logo-clicbusiness.avif" alt="Clic Business">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="section-title">Vamos Conversar</h2>
+                    <p>Entre em contato conosco e descubra como podemos transformar seus dados em resultados.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@devresult.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (48) 99912-5833</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+55 (48) 99912-5833</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Sua Empresa">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo/logo.jpg" alt="DevResult IT Solutions">
+                    <p>Transformando dados em resultados</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li>Big Data</li>
+                        <li>Engenharia de Dados</li>
+                        <li>Inteligência Artificial</li>
+                        <li>Business Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevResult IT Solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

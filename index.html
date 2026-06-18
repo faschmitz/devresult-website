@@ -1,295 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevResult IT Solutions - Big Data e Inteligência Artificial</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevResult IT Solutions</title>
+  <meta name="description" content="Soluções em Big Data, engenharia de dados, inteligência artificial e business intelligence." />
+  <link rel="icon" href="brand/devresult-mark.png" />
+  <link rel="shortcut icon" href="brand/devresult-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <div class="cursor"></div>
-    <div class="cursor-trail"></div>
-    
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader">
-            <div class="loader-inner"></div>
+<body class="antialiased">
+  <main class="min-h-screen bg-[#f6f8fb] text-[#07172d]">
+    <header class="sticky top-0 z-40 border-b border-[#dce5ef] bg-white/92 backdrop-blur">
+      <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8">
+        <a href="#inicio" class="flex items-center gap-3" aria-label="DevResult">
+          <span class="flex h-9 w-9 items-center justify-center rounded-md bg-[#002559]">
+            <img src="brand/devresult-mark.png" alt="" width="145" height="153" class="h-7 w-7 object-contain" />
+          </span>
+          <span class="text-lg font-semibold text-[#002559]">devResult</span>
+        </a>
+        <div class="hidden items-center gap-8 text-sm font-medium text-[#40536c] md:flex">
+          <a href="#servicos" class="hover:text-[#002559]">Serviços</a>
+          <a href="#metodo" class="hover:text-[#002559]">Método</a>
+          <a href="#clientes" class="hover:text-[#002559]">Clientes</a>
+          <a href="#contato" class="hover:text-[#002559]">Contato</a>
         </div>
-        <p class="loading-text">Inicializando Sistema...</p>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <img src="logo/logo.jpg" alt="DevResult IT Solutions" class="logo-img">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#services" class="nav-link">Serviços</a></li>
-                <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#clients" class="nav-link">Clientes</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+        <a href="https://wa.me/5548999125833" class="rounded-md bg-[#63d4e8] px-4 py-2 text-sm font-semibold text-[#002559] shadow-sm transition hover:bg-[#4cc6dd]">
+          Conversar
+        </a>
+      </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="particles" id="particles"></div>
-        <div class="hero-content">
-            <div class="hero-logo-container">
-                <div class="logo-hologram">
-                    <img src="logo/logo.jpg" alt="DevResult IT Solutions" class="hero-logo">
-                    <div class="hologram-effect"></div>
-                    <div class="hologram-lines"></div>
-                    <div class="hologram-grid"></div>
-                    <div class="logo-glow-bg"></div>
-                </div>
-            </div>
-            <h1 class="hero-title glitch" data-text="DevResult IT Solutions">
-                DevResult IT Solutions
-            </h1>
-            <p class="hero-subtitle">
-                Transformando dados em <span class="highlight">resultados</span>
+    <section id="inicio" class="relative isolate flex items-center overflow-hidden bg-[#002559] px-5 py-8 text-white sm:px-8 sm:py-10 lg:py-10">
+      <div class="absolute inset-0 -z-20 bg-cover bg-center opacity-35" style="background-image: url('brand/devresult-logo-blue.png')"></div>
+      <div class="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,37,89,0.98),rgba(0,37,89,0.82),rgba(0,37,89,0.58))]"></div>
+
+      <div class="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-center">
+        <div class="max-w-4xl">
+          <img src="brand/devresult-logo-transparent.png" alt="DevResult IT Solutions" width="567" height="153" class="mb-6 h-auto w-full max-w-[290px]" />
+          <p class="mb-4 text-sm font-semibold uppercase text-[#63d4e8]">
+            Big Data, Engenharia e Inteligência Artificial
+          </p>
+          <h1 class="text-4xl font-semibold leading-[1.05] text-white sm:text-5xl xl:text-6xl">
+            Dados que viram decisão. Software que entrega resultado.
+          </h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-[#d7e5f4]">
+            A DevResult cria soluções digitais sob medida para estruturar dados,
+            automatizar processos e apoiar decisões com BI, IA aplicada e engenharia
+            de software.
+          </p>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a href="#servicos" class="rounded-md bg-[#63d4e8] px-5 py-3 text-center text-sm font-semibold text-[#002559] transition hover:bg-[#4cc6dd]">
+              Ver serviços
+            </a>
+            <a href="mailto:contato@devresult.com.br" class="rounded-md border border-white/35 px-5 py-3 text-center text-sm font-semibold text-white transition hover:border-[#63d4e8] hover:text-[#63d4e8]">
+              Fale conosco
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden gap-3 lg:grid">
+          <div class="border-l-2 border-[#63d4e8] bg-white/8 px-5 py-4 backdrop-blur-sm">
+            <p class="text-base font-semibold text-white">Dados confiáveis</p>
+            <p class="mt-2 text-sm leading-6 text-[#c6d8e9]">
+              Tecnologia conectada ao problema, ao contexto e ao resultado esperado.
             </p>
-            <div class="hero-description">
-                <p>Especialistas em Big Data, Engenharia e Inteligência Artificial</p>
-                <p>Soluções inovadoras para impulsionar seu negócio</p>
-            </div>
-            <div class="cta-buttons">
-                <button class="cta-button primary" onclick="scrollToSection('services')">
-                    Nossos Serviços
-                </button>
-                <button class="cta-button secondary" onclick="scrollToSection('contact')">
-                    Fale Conosco
-                </button>
-            </div>
+          </div>
+          <div class="border-l-2 border-[#63d4e8] bg-white/8 px-5 py-4 backdrop-blur-sm">
+            <p class="text-base font-semibold text-white">IA aplicada</p>
+            <p class="mt-2 text-sm leading-6 text-[#c6d8e9]">
+              Tecnologia conectada ao problema, ao contexto e ao resultado esperado.
+            </p>
+          </div>
+          <div class="border-l-2 border-[#63d4e8] bg-white/8 px-5 py-4 backdrop-blur-sm">
+            <p class="text-base font-semibold text-white">Entrega sob medida</p>
+            <p class="mt-2 text-sm leading-6 text-[#c6d8e9]">
+              Tecnologia conectada ao problema, ao contexto e ao resultado esperado.
+            </p>
+          </div>
         </div>
-        <div class="hero-visual">
-            <div class="ai-visualization">
-                <div class="neural-network">
-                    <div class="neural-node"></div>
-                    <div class="neural-node"></div>
-                    <div class="neural-node"></div>
-                    <div class="neural-node"></div>
-                    <div class="neural-node"></div>
-                    <div class="neural-node"></div>
-                    <div class="neural-connection"></div>
-                    <div class="neural-connection"></div>
-                    <div class="neural-connection"></div>
-                    <div class="neural-connection"></div>
-                </div>
-                <div class="ai-brain">
-                    <div class="brain-waves"></div>
-                    <div class="brain-waves"></div>
-                    <div class="brain-waves"></div>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <div class="icon-big-data"></div>
-                    </div>
-                    <h3>Big Data</h3>
-                    <p>Processamento e análise de grandes volumes de dados para insights valiosos</p>
-                    <ul>
-                        <li>Arquitetura de dados distribuídos</li>
-                        <li>Processamento em tempo real</li>
-                        <li>Data Lakes e Data Warehouses</li>
-                        <li>ETL/ELT pipelines</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <div class="icon-data-engineering"></div>
-                    </div>
-                    <h3>Engenharia de Dados</h3>
-                    <p>Infraestrutura robusta para coleta, processamento e armazenamento de dados</p>
-                    <ul>
-                        <li>Pipeline de dados automatizados</li>
-                        <li>Integração de fontes diversas</li>
-                        <li>Monitoramento e qualidade</li>
-                        <li>Arquitetura cloud-native</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <div class="icon-artificial-intelligence"></div>
-                    </div>
-                    <h3>Inteligência Artificial</h3>
-                    <p>Modelos preditivos e IA avançada para tomada de decisão inteligente</p>
-                    <ul>
-                        <li>Machine Learning e AI</li>
-                        <li>Análise preditiva</li>
-                        <li>Visualização de dados</li>
-                        <li>Business Intelligence</li>
-                    </ul>
-                </div>
-            </div>
+    <section id="servicos" class="px-5 py-20 sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl">
+          <p class="text-sm font-semibold uppercase text-[#00788e]">Serviços</p>
+          <h2 class="mt-4 text-3xl font-semibold text-[#07172d] sm:text-5xl">
+            Soluções para tirar dados do improviso e colocar sistemas em movimento.
+          </h2>
         </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-lg border border-[#d7e1ec] bg-white p-6 shadow-sm">
+            <p class="text-sm font-semibold text-[#00788e]">01</p>
+            <h3 class="mt-5 text-xl font-semibold text-[#002559]">Big Data</h3>
+            <p class="mt-4 text-sm leading-7 text-[#52637a]">Arquiteturas para processar volumes grandes de dados com confiança, governança e velocidade.</p>
+            <ul class="mt-6 space-y-3 text-sm text-[#22344d]">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Data lakes</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Processamento em escala</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>ETL e ELT</span></li>
+            </ul>
+          </article>
+          <article class="rounded-lg border border-[#d7e1ec] bg-white p-6 shadow-sm">
+            <p class="text-sm font-semibold text-[#00788e]">02</p>
+            <h3 class="mt-5 text-xl font-semibold text-[#002559]">Engenharia de Dados</h3>
+            <p class="mt-4 text-sm leading-7 text-[#52637a]">Pipelines, integrações e modelos preparados para sustentar operações analíticas e produtos digitais.</p>
+            <ul class="mt-6 space-y-3 text-sm text-[#22344d]">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Integração de fontes</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Qualidade de dados</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Modelagem</span></li>
+            </ul>
+          </article>
+          <article class="rounded-lg border border-[#d7e1ec] bg-white p-6 shadow-sm">
+            <p class="text-sm font-semibold text-[#00788e]">03</p>
+            <h3 class="mt-5 text-xl font-semibold text-[#002559]">Inteligência Artificial</h3>
+            <p class="mt-4 text-sm leading-7 text-[#52637a]">Modelos, automações e análises preditivas aplicadas a problemas reais de negócio.</p>
+            <ul class="mt-6 space-y-3 text-sm text-[#22344d]">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Machine learning</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Indicadores de risco</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Automação inteligente</span></li>
+            </ul>
+          </article>
+          <article class="rounded-lg border border-[#d7e1ec] bg-white p-6 shadow-sm">
+            <p class="text-sm font-semibold text-[#00788e]">04</p>
+            <h3 class="mt-5 text-xl font-semibold text-[#002559]">Business Intelligence</h3>
+            <p class="mt-4 text-sm leading-7 text-[#52637a]">Dashboards e indicadores que transformam dados operacionais em decisão clara e acionável.</p>
+            <ul class="mt-6 space-y-3 text-sm text-[#22344d]">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>KPIs</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Visualização</span></li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-[#63d4e8]"></span><span>Self-service analytics</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <h2 class="section-title">Sobre a DevResult</h2>
-                    <p>
-                        A DevResult IT Solutions é uma empresa especializada em transformar dados em resultados concretos para o seu negócio. 
-                        Com expertise em Big Data, Engenharia e Inteligência Artificial, oferecemos soluções inovadoras e personalizadas.
-                    </p>
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number" data-target="50">0</span>
-                            <span class="stat-label">Projetos Concluídos</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="99">0</span>
-                            <span class="stat-label">% Satisfação</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="24">0</span>
-                            <span class="stat-label">Suporte 24/7</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual" data-aos="fade-left">
-                    <div class="tech-stack">
-                        <div class="tech-item">Python</div>
-                        <div class="tech-item">Spark</div>
-                        <div class="tech-item">Hadoop</div>
-                        <div class="tech-item">AWS</div>
-                        <div class="tech-item">Azure</div>
-                        <div class="tech-item">Docker</div>
-                        <div class="tech-item">Kubernetes</div>
-                        <div class="tech-item">TensorFlow</div>
-                    </div>
-                </div>
-            </div>
+    <section id="metodo" class="bg-white px-5 py-20 sm:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase text-[#00788e]">Método</p>
+          <h2 class="mt-4 text-3xl font-semibold text-[#07172d] sm:text-5xl">
+            Clareza técnica antes de qualquer linha de código.
+          </h2>
+          <p class="mt-6 text-base leading-8 text-[#52637a]">
+            O trabalho combina análise de requisitos, engenharia de software e visão
+            analítica para transformar necessidades de negócio em entregas práticas.
+          </p>
         </div>
+
+        <div class="grid gap-4">
+          <div class="grid gap-5 border-b border-[#d7e1ec] pb-6 sm:grid-cols-[72px_1fr]">
+            <p class="font-mono text-3xl text-[#63d4e8]">01</p>
+            <p class="text-xl leading-8 text-[#22344d]">Entendimento do desafio, fontes de dados e regras de negócio.</p>
+          </div>
+          <div class="grid gap-5 border-b border-[#d7e1ec] pb-6 sm:grid-cols-[72px_1fr]">
+            <p class="font-mono text-3xl text-[#63d4e8]">02</p>
+            <p class="text-xl leading-8 text-[#22344d]">Desenho técnico simples o suficiente para operar e robusto o bastante para crescer.</p>
+          </div>
+          <div class="grid gap-5 border-b border-[#d7e1ec] pb-6 sm:grid-cols-[72px_1fr]">
+            <p class="font-mono text-3xl text-[#63d4e8]">03</p>
+            <p class="text-xl leading-8 text-[#22344d]">Entrega incremental com validação, documentação e transferência de conhecimento.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients">
-        <div class="container">
-            <h2 class="section-title">Nossos Clientes</h2>
-            <div class="clients-grid" data-aos="fade-up">
-                <div class="client-logo">
-                    <img src="clientes/0.avif" alt="Cliente 1">
-                </div>
-                <div class="client-logo">
-                    <img src="clientes/Firstlog.avif" alt="Firstlog">
-                </div>
-                <div class="client-logo">
-                    <img src="clientes/logo apae.avif" alt="APAE">
-                </div>
-                <div class="client-logo">
-                    <img src="clientes/logo-clicbusiness.avif" alt="Clic Business">
-                </div>
-            </div>
+    <section id="clientes" class="px-5 py-20 sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div>
+            <p class="text-sm font-semibold uppercase text-[#00788e]">Experiência</p>
+            <h2 class="mt-4 text-3xl font-semibold text-[#07172d] sm:text-5xl">
+              Projetos para operações que precisam decidir melhor.
+            </h2>
+          </div>
+          <p class="text-base leading-8 text-[#52637a]">
+            Da integração de sistemas à camada analítica, a DevResult atua em
+            iniciativas onde dados, processos e tecnologia precisam conversar sem
+            ruído.
+          </p>
         </div>
+
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+          <div class="client-card flex items-center justify-center rounded-lg border border-[#d7e1ec] bg-white px-6 py-10 shadow-sm">
+            <img class="client-logo" src="clientes/Firstlog.avif" alt="Firstlog" />
+          </div>
+          <div class="client-card flex items-center justify-center rounded-lg border border-[#d7e1ec] bg-white px-6 py-10 shadow-sm">
+            <img class="client-logo" src="clientes/logo apae.avif" alt="APAE" />
+          </div>
+          <div class="client-card flex items-center justify-center rounded-lg border border-[#d7e1ec] bg-white px-6 py-10 shadow-sm">
+            <img class="client-logo" src="clientes/logo-clicbusiness.avif" alt="Clic Business" />
+          </div>
+          <div class="client-card flex items-center justify-center rounded-lg border border-[#d7e1ec] bg-white px-6 py-10 shadow-sm">
+            <img class="client-logo" src="clientes/0.avif" alt="Cliente DevResult" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h2 class="section-title">Vamos Conversar</h2>
-                    <p>Entre em contato conosco e descubra como podemos transformar seus dados em resultados.</p>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>contato@devresult.com.br</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Telefone</h4>
-                            <p>+55 (48) 99912-5833</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h4>WhatsApp</h4>
-                            <p>+55 (48) 99912-5833</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Sua Empresa">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+    <section id="contato" class="bg-[#07172d] px-5 py-20 text-white sm:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+        <div>
+          <p class="text-sm font-semibold uppercase text-[#63d4e8]">Contato</p>
+          <h2 class="mt-4 text-4xl font-semibold sm:text-6xl">
+            Vamos transformar dados em resultado?
+          </h2>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-[#c6d8e9]">
+            Conte o desafio, o processo ou a decisão que precisa melhorar. A
+            DevResult ajuda a desenhar o caminho técnico e entregar a solução.
+          </p>
         </div>
+
+        <div class="rounded-lg border border-white/15 bg-white/7 p-6">
+          <div class="space-y-6">
+            <div>
+              <p class="text-sm text-[#9db1c9]">Email</p>
+              <a href="mailto:contato@devresult.com.br" class="mt-1 block text-xl font-semibold text-white hover:text-[#63d4e8]">
+                contato@devresult.com.br
+              </a>
+            </div>
+            <div>
+              <p class="text-sm text-[#9db1c9]">Telefone e WhatsApp</p>
+              <a href="https://wa.me/5548999125833" class="mt-1 block text-xl font-semibold text-white hover:text-[#63d4e8]">
+                +55 (48) 99912-5833
+              </a>
+            </div>
+            <a href="https://wa.me/5548999125833" class="block rounded-md bg-[#63d4e8] px-5 py-3 text-center text-sm font-semibold text-[#002559] transition hover:bg-[#4cc6dd]">
+              Enviar mensagem
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo/logo.jpg" alt="DevResult IT Solutions">
-                    <p>Transformando dados em resultados</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#about">Sobre</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-services">
-                    <h4>Serviços</h4>
-                    <ul>
-                        <li>Big Data</li>
-                        <li>Engenharia de Dados</li>
-                        <li>Inteligência Artificial</li>
-                        <li>Business Intelligence</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 DevResult IT Solutions. Todos os direitos reservados.</p>
-            </div>
-        </div>
+    <footer class="bg-[#031326] px-5 py-8 text-[#9db1c9] sm:px-8">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 text-sm md:flex-row md:items-center md:justify-between">
+        <p>© 2026 DevResult IT Solutions. Todos os direitos reservados.</p>
+        <p>Big Data · Engenharia de Dados · IA · BI</p>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
+  </main>
 </body>
 </html>

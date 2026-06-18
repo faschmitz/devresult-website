@@ -5,6 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
+      "NEWVERSION/**",
       "deploy.sh",
       "deploy-simple.sh",
       "DEPLOY.md"

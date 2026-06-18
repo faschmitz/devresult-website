@@ -29,6 +29,9 @@ build/
 dist/
 out/
 
+# Source app gerada pelo site-creator (porte estático já extraído para a raiz)
+NEWVERSION/
+
 # IDE files
 .vscode/
 .idea/
